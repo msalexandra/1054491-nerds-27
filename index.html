@@ -5,8 +5,81 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <div>
+        <nav class="nav">
+          <a class="header-logo">
+            <img class="logo-image" src="img/htmlacademy.jpg" alt="Логотип студии" width="140" height="120">
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Клиенты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          
+          <div class="nav-basket">
+            <a class="nav-basket-link" href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <h1 class="visually-hidden">Дизайн-студия "Nёrd's"</h1>
+      <section>
+        <h2>Услуги</h2>
+        <ul>
+          <li>
+            <h3>ВЕБ-САЙТЫ</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button type="button" class="button button-order red-button">Заказать</button>
+          </li>
+          <li>
+            <h3>ПРИЛОЖЕНИЯ</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button type="button" class="button button-order green-button">Заказать</button>
+          </li>
+          <li>
+            <h3>ПРЕЗЕНТАЦИИ</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <button type="button" class="button button-order yellow-button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul class="footer-social">
+          <li>
+            <a href="#">
+              <img src="img/vk.png" alt="VK" width="40" height="40">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/facebook.png" alt="Facebook" width="40" height="40">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/inst.png" alt="Instagram" width="40" height="40">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
