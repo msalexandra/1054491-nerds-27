@@ -38,7 +38,56 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filtres">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма-->
+        <div class="catalog page-main-catalog">
+          <form class="form-filters" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="form-filters-fieldset">
+              <legend class="form-filtres-legend">Сетка:</legend>
+
+              <ul class="form-filters-input">
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-radio" for="filter-adaptive">Адаптивная</label>
+                  <input class="form-filters-radio visually-hidden" type="radio" id="filter-adaptive" name="grid" value="adaptive" checked>
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-radio" for="filter-fixed">Фиксированная</label>
+                  <input class="form-filters-radio visually-hidden" type="radio" id="filter-fixed" name="grid" value="fixed">
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-radio" for="filter-fluid">Резиновая</label>
+                  <input class="form-filters-radio visually-hidden" type="radio" id="filter-fluid" name="grid" value="fixed">
+                </li>
+              </ul>
+            </fieldset>
+            
+            <fieldset class="form-filters-fieldset form-filters-features">
+              <legend class="form-filters-legent">Особенности:</legend>
+
+              <ul class="form-filters-input">
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-checkbox" for="filter-slider">Слайдер</label>
+                  <input class="form-filters-checkbox visually-hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked> 
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-checkbox" for="filter-slider">Блок преимуществ</label>
+                  <input class="form-filters-checkbox visually-hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked> 
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-checkbox" for="filter-slider">Новости</label>
+                  <input class="form-filters-checkbox visually-hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked> 
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-checkbox" for="filter-slider">Галерея</label>
+                  <input class="form-filters-checkbox visually-hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked> 
+                </li>
+                <li class="form-filters-input-block">
+                  <label class="form-filters-label form-filters-label-checkbox" for="filter-slider">Корзина</label>
+                  <input class="form-filters-checkbox visually-hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked> 
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button-gray" type="submit">Показать</button>
+          </form>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -149,5 +198,26 @@
         <p class="footer-agitation">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+      <h2>Напишите нам</h2>
+      <div class="form-feedback-row">
+        <div class="form-feedback-column">
+          <label class="form-feedback-label" for="feedback-name">Ваше имя:</label>
+          <input class="form-feedback-text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия"></input>
+        </div>
+        <div class="form-feedback-column">
+          <label class="form-feedback-label" for="feedback-email">Ваш e-mail:</label>
+          <input class="form-feedback-text" type="text" name="email" id="feedback-email" placeholder="email@example.com"></input>
+        </div>
+      </div>
+
+      <div class="form-feedback-row form-feedback-message">
+        <label class="form-feedback-label" for="feedback-message">Текст письма:</label>
+        <textarea class="form-feedback-text form-feedback-textarea" name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
+      </div>
+
+      <button class="button button-red form-feedback-button" type="submit">Отправить</button>
+      <button class="form-feedback-close" aria-label="Закрыть" type="button"></button>
+    </form>
   </body>
 </html>

@@ -177,5 +177,26 @@
         <p class="footer-agitation">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+      <h2>Напишите нам</h2>
+      <div class="form-feedback-row">
+        <div class="form-feedback-column">
+          <label class="form-feedback-label" for="feedback-name">Ваше имя:</label>
+          <input class="form-feedback-text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия"></input>
+        </div>
+        <div class="form-feedback-column">
+          <label class="form-feedback-label" for="feedback-email">Ваш e-mail:</label>
+          <input class="form-feedback-text" type="text" name="email" id="feedback-email" placeholder="email@example.com"></input>
+        </div>
+      </div>
+
+      <div class="form-feedback-row form-feedback-message">
+        <label class="form-feedback-label" for="feedback-message">Текст письма:</label>
+        <textarea class="form-feedback-text form-feedback-textarea" name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
+      </div>
+
+      <button class="button button-red form-feedback-button" type="submit">Отправить</button>
+      <button class="form-feedback-close" aria-label="Закрыть" type="button"></button>
+    </form>
   </body>
 </html>
