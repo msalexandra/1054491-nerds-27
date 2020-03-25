@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext" rel='stylesheet'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
         <nav class="nav">
           <a class="header-logo">
-            <img class="logo-image" src="img/nerds-logo.svg" alt="Логотип студии" width="160" height="65">
+            <img class="logo-image" src="img/nerds-logo.svg" alt="Логотип студии" width="160" height="72">
           </a>
+          <div class="nav-link-list">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="#">Студия</a>
+              <a class="nav-link nav-link-choice" href="#">Студия</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Клиенты</a>
@@ -24,7 +29,7 @@
               <a class="nav-link" href="#">Контакты</a>
             </li>
           </ul>
-          
+        </div>
           <div class="nav-basket">
             <a class="nav-basket-image-link" href="#">
               <img class="nav-basket-image" src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
@@ -32,54 +37,88 @@
             <a class="nav-basket-link" href="#">Корзина</a>
           </div>
         </nav>
-      <div class="slider">
-        <div class="slider-slide slide slide-visible">
-          <div class="slide-content">
-            <p class="slide-caption">Долго, дорого, скрупулезно.</p>
-            <p class="slide-text">Математически выверенный дизайн
-              <br>для вашего сайта или мобильного приложения.</p>
-              <a class="button button-red" href="#">Узнать больше</a>
-              <div class="slider-swipe">
-                <button class="slider-swipe-button slider-swipe-button-selected"></button>
-                <button class="slider-swipe-button"></button>
-                <button class="slider-swipe-button"></button>
-              </div>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                 <div class="slide-caption">Долго, дорого,<br>скрупулезно</div>
+                 <p class="slide-text-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                 <a class="button-header button button-red" href="#">Узнать больше</a>
+              </div>
+             </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-caption">Любим математику <br> как никто другой</p></div>
+                <p class="slide-text-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="button-header button button-red" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-caption">Только ночь,<br> только хардкор!</div>
+                <p class="slide-text-description">Работать днем, как все? Мы против этого.<br>  Ближе к полуночи работа только начинается.</p>
+                <a class="button-header button button-red" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+              </div>
+              <div class="slide-img">
+              <!-- <img class="clider-img-first" src="img/nerds-index-slide1.png" alt="Картинка слайдера" width="760" height="431"> -->
+                  <button class="button slider-swipe-button slider-swipe-button-selected"></button>
+                  <button class="button slider-swipe-button"></button>
+                  <button class="button slider-swipe-button"></button>
+                </div>
+         <!-- </div> -->
         </div>
       </div>
     </header>
     
     <main>
-      <h1 class="visually-hidden">Дизайн-студия "Nёrd's"</h1>
       <section class="services">
-        <h2>Услуги</h2>
-        <ul>
-          <li>
+        <div class="container">
+          <div class="services-list">
+            <div class="services-website">
             <img class="services-website-img" src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
-            <h3>веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <h3 class="services-item">веб-сайты</h3>
+            <p class="services-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <button type="button" class="button button-order button-red">Заказать</button>
-          </li>
-          <li>
+          </div>
+        
+          <div class="services-app">
             <img class="services-app-img" src="img/illustration-2.jpg" alt="Приложения" width="300" height="146">
-            <h3>приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <h3 class="services-item">приложения</h3>
+            <p class="services-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
             <button type="button" class="button button-order button-green">Заказать</button>
-          </li>
-          <li>
+          </div>
+    
+          <div class="services-presentations">
             <img class="services-presentations-img" src="img/illustration-3.jpg" alt="Презентации" width="300" height="146">
-            <h3>презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <h3 class="services-item">презентации</h3>
+            <p class="services-item-description">Вы даже не подозреваете, насколько вы изумительны!</p>
             <button type="button" class="button button-order button-yellow">Заказать</button>
-          </li>
-        </ul>
+          </div>
+      </div>
       </section>
       <section class="company">
-          <div class="company-about">
-            <p class="company-caption">Мы - маленькая, но гордая <br> дизайн студия из Краснодара.</p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+        <hr class="line-horizon"/>
+        <div class="container">
+          <div class="company-about-studio">
+            
+          <div class="company-about-nerds">
+            <h2 class="company-caption">Мы — маленькая, но гордая <br> дизайн студия из Краснодара.</h2>
+            <p class="company-about">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p>Выполняем заказы на разработку:</p>
+            <p class="company-list-heading">Выполняем заказы на разработку:</p>
             <ul class="company-list">
               <li class="company-list-item">Веб-сайтов любой сложности</li>
               <li class="company-list-item">Мобильных приложений для IOS и Android</li>
@@ -93,28 +132,31 @@
 
             <table class="company-table">
               <caption class="company-table-caption">с 2004 года Любим точность во всем:</caption>
-              <thead>
-                <tr>
-                  <th class="company-table-header">Уровень самоотдачи</th>
-                  <th class="company-table-header">Соблюдение сроков</th>
-                  <th class="company-table-header">Минимальная предоплата</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td class="table-indication-cell">146<sup>%</sup></td>
                   <td class="table-indication-cell">100<sup>%</sup></td>
                   <td class="table-indication-cell">50<sup>%</sup></td>
                 </tr>
+                <tr>
+                  <td class="company-table-header">Уровень самоотдачи</td>
+                  <td class="company-table-header">Соблюдение сроков</td>
+                  <td class="company-table-header">Минимальная предоплата</td>
+                </tr>
               </tbody>
             </table>
           </div>
+          </div>
+        </div>
       </section>
+      <section class="partners">
+    <div class="container">
       <div class="clients">
+        <div class="clients-logo">
         <ul class="clients-list">
           <li class="clients-list-item">
             <a class="clients-list-link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img class="clients-list-image" src="img/logo-1.png" alt="HTML Academy" width="260" height="180">
+              <img class="clients-list-image line-verical" src="img/logo-1.png" alt="HTML Academy" width="260" height="180">
             </a>
           </li>
           <li class="clients-list-item">
@@ -135,68 +177,79 @@
           </li>
         </ul>
       </div>
+      </div>
+    </div>
+  </section>
     </main>
     <footer>
-      <section class="map">
-        <h2 class="visually-hidden">Как к нам добраться</h2>
-        <img class="map-image" src="img/map.jpg" alt="Локация офиса" width="1440" height="785">
+      <div class="map">
+          <div class="container">
 
           <div class="contacts">
-            <p class="contacts-caption">Nёrds design studio</p>
+            <h3 class="contacts-caption">Nёrds design studio</h3>
 
             <p class="contacts-text">
               191186, Санкт-Петербург, <br>
               ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts-number">тел.
-              <a class="contacts-number-link" href="">+7 (812) 275-75-75</a>
+            <p class="contacts-number">тел. +7 (812) 275-75-75</p>
             </p>
-            <a class="button button-red contacts-button" href="#">Напишите нам</a>
+            <button class="button button-red contacts-button" href="#">Напишите нам</button>
           </div>
-      </section>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-information">
       <div class="footer">
-        <ul class="footer-social">
-          <li>
               <a class="footer-social-vk" href="https://vk.com">
                 <img src="img/vk-icon.svg" alt="VK" width="26" height="15">
               </a>
-          </li>
-          <li>
+        
             <a  class="footer-social-fb" href="https://www.facebook.com">
               <img src="img/fb-icon.svg" alt="Facebook" width="26" height="15">
             </a>
-          </li>
-          <li>
+     
             <a class="footer-social-inst" href="https://www.instagram.com">
               <img src="img/insta-icon.svg" alt="Instagram" width="26" height="15">
             </a>
-          </li>
-        </ul>
+        
       </div>
       <div class="footer-discount">
         <p class="footer-agitation">Давайте дружить, это выгодно!</p>
-        <p class="footer-agitation">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+        <p class="footer-agitation-sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </div>
+  </div>
     </footer>
+
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-      <h2>Напишите нам</h2>
-      <div class="form-feedback-row">
+      <div class="feedback-container">
+      <div class="form-feedback-nerds">
+      <h2 class="form-agitation">Напишите нам</h2>
+      <div class="form-name-mail">
         <div class="form-feedback-column">
-          <label class="form-feedback-label" for="feedback-name">Ваше имя:</label>
-          <input class="form-feedback-text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия"></input>
+          <label class="form-feedback-label" for="feedback-name">Ваше имя:</label><br>
+          <input class="form-feedback-text" type="text" name="name" id="feedback-name" placeholder="  Имя Фамилия"></input>
         </div>
         <div class="form-feedback-column">
-          <label class="form-feedback-label" for="feedback-email">Ваш e-mail:</label>
-          <input class="form-feedback-text" type="text" name="email" id="feedback-email" placeholder="email@example.com"></input>
+          <label class="form-feedback-label" for="feedback-email">Ваш e-mail:</label><br>
+          <input class="form-feedback-text" type="text" name="email" id="feedback-email" placeholder="  email@example.com"></input>
         </div>
       </div>
 
       <div class="form-feedback-row form-feedback-message">
-        <label class="form-feedback-label" for="feedback-message">Текст письма:</label>
-        <textarea class="form-feedback-text form-feedback-textarea" name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
+        <label class="form-feedback-label" for="feedback-message">Текст письма:</label><br>
+        <textarea class="form-feedback-text form-feedback-textarea" name="message" id="feedback-message" placeholder= "
+ В свободной форме"></textarea>
       </div>
 
       <button class="button button-red form-feedback-button" type="submit">Отправить</button>
-      <button class="form-feedback-close" aria-label="Закрыть" type="button"></button>
+      </div>
+      <button class="form-feedback-close" aria-label="Закрыть" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+      </button>
+    </div>
     </form>
   </body>
 </html>
